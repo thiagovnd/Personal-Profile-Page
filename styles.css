@@ -75,6 +75,8 @@ header .profile-image {
 }
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 .tag {
   background-color: #efefef;
@@ -99,7 +101,7 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #444;
 }
 
 ul.skills {
@@ -181,6 +183,9 @@ a.social:hover {
 
   header {
     min-height: 470px;
+  }
+  header.shorter-header {
+    min-height: 155px;
   }
 
   .nav {
